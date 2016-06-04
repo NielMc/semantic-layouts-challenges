@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Flexbox</title>
-		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="reset.css">
-		<style type="text/css">
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<style type="text/css">
 		nav{
 			font-family: roboto;
 			
@@ -38,7 +38,7 @@
 		#logoNav{
 			font-size: 30px;
 			font-weight: bold;
-			}
+		}
 		div {
 			font-family: Dosis;
 			
@@ -59,50 +59,50 @@
 			border-radius: 10px;
 		}
 		.card-container{
-        margin: 30px auto;
+			margin: 30px auto;
 			width: 100%;
 			height: 1000px;
 			display: flex;
 			flex-direction: column;
 			align-items:stretch;
 			border-radius: 10px;
-}
-.card{
-        
+		}
+		.card{
+			
 			
 			
 			text-align: center;
 			line-height: 200px;
 			width: 31%;
-}
-.card h2{
-        text-align: center;
-}
-.card img{
-        width:100%;
-        }
-.card p{
-        font-family: dosis;
-        font-size: 22px;
-}
+		}
+		.card h2{
+			text-align: center;
+		}
+		.card img{
+			width:100%;
+		}
+		.card p{
+			font-family: dosis;
+			font-size: 22px;
+		}
 
 		@media screen and (min-width: 700px){
 			nav{
-			/*Code goes here*/
-			align-items: flex-start;
-			height: 100px;
-			flex-direction: row;
+				/*for screens wider than 700px the nav bar is a row across the screen*/
+				align-items: flex-start;
+				height: 100px;
+				flex-direction: row;
 			}
 			a{
-			/*Code goes here*/
-			border:none;
-			justify-content: flex-end;
+				/*nav links move to right of screen*/
+				border:none;
+				justify-content: flex-end;
 
 			}
 			#logoNav{
-			/*Code goes here*/
-			justify-content: flex-start;
-			padding-right: 600px;
+				/*The nav logo stays to the left*/
+				justify-content: flex-start;
+				padding-right: 600px;
 			}
 			#landing-message {
 				justify-content: flex-start;
@@ -126,7 +126,7 @@
 			}
 		}
 
-		</style>
+	</style>
 </head>
 <body>
 
@@ -138,31 +138,31 @@
 		<a href="#">Contact</a>
 		<a href="#">Photos</a>
 	</nav>
-<section id="landing">
-	<div id="landing-message">
-		<h2>App development site</h2>
-	</div>
-	<div id="landing-graphic">
-		<img src="file:///C:/Users/user/projects/semantic-layouts-challenges/7-mobile-first-landing-page/img/mobile.png">
-	</div>
+	<section id="landing">
+		<div id="landing-message">
+			<h2>App development site</h2>
+		</div>
+		<div id="landing-graphic">
+			<img src="file:///C:/Users/user/projects/semantic-layouts-challenges/7-mobile-first-landing-page/img/mobile.png">
+		</div>
 
-</section>
-<section class="card-container">
-        <div class="card">
-             <img src="img/graphic1.png" alt="design pic">
-             <h2>Web Info Sessions</h2>
-             <p>If you have questions about your career in...</p>
-        </div> 
-        <div class="card">
-             <img src="img/graphic1.png" alt="design pic">
-             <h2>Web Info Sessions</h2>
-             <p>If you have questions about your career in...</p>
-        </div> 
-        <div class="card">
-             <img src="img/graphic1.png" alt="design pic">
-             <h2>Web Info Sessions</h2>
-             <p>If you have questions about your career in...</p>
-        </div> 
-</section>
+	</section>
+	<section class="card-container">
+		<div class="card">
+			<img src="img/graphic1.png" alt="design pic">
+			<h2>Web Info Sessions</h2>
+			<p>If you have questions about your career in...</p>
+		</div> 
+		<div class="card">
+			<img src="img/graphic1.png" alt="design pic">
+			<h2>Web Info Sessions</h2>
+			<p>If you have questions about your career in...</p>
+		</div> 
+		<div class="card">
+			<img src="img/graphic1.png" alt="design pic">
+			<h2>Web Info Sessions</h2>
+			<p>If you have questions about your career in...</p>
+		</div> 
+	</section>
 </body>
 </html>
